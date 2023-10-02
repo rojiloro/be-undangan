@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 const req = require("express/lib/request");
-const port = process.env.PORT;
+const port = process.env.DB_PORT;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
